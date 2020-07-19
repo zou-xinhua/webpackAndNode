@@ -1,0 +1,12 @@
+{
+    "configurations": [{
+        "type": "node",
+        "request": "launch",
+        "name": "simple-webpack",
+        "runtimeExecutable": "/Users/marina/.nvm/versions/node/v10.11.0/bin/node",
+        "program": "${workspaceFolder}/simple.js",
+        "restart": true,
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen"
+    }]
+}
