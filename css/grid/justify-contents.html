@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .container1,
+        .container2,
+        .container3,
+        .container4, .container5{
+            display: grid;
+            grid-template-columns: 100px 200px 100px;
+            grid-template-rows: 50px 50px 50px;
+            border: 1px solid #e5e4e9;
+        }
+        .container6{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        .container1 {
+            justify-content: start;
+        }
+
+        .container2 {
+            justify-content: center;
+        }
+
+        .container3 {
+            justify-content: end;
+        }
+
+        .container4 {
+            justify-content: space-around;
+        }
+
+        .container5{
+            justify-content: space-between;
+        }
+        .container6{
+            justify-content: stretch;
+        }
+
+        .item {
+            font-size: 2em;
+            text-align: center;
+            border: 1px solid #e5e4e9;
+            background-color: #f68f26;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <div class="container2">
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <div class="container3">
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+    <div class="container4">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+    </div>
+    <div class="container5">
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+    </div>
+    <div class="container6">
+        <div class="item">g</div>
+        <div class="item">f</div>
+        <div class="item">i</div>
+    </div>
+</body>
+
+</html>

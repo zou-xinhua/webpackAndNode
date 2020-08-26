@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body{
+            margin: 40px;
+        }
+        .wrapper {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 120px auto 120px;
+            grid-template-areas:
+            "header header header"
+            "sidebar content sidebar2"
+            "footer footer footer";
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .sidebar2{
+            grid-area: sidebar2;
+        }
+        .content{
+            grid-area: content;
+        }
+        .header{
+            grid-area: header;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .box{
+            background: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .header, .footer{
+            background: #999;
+        }
+        .sidebar2{
+            background: #ccc;
+            color: #444;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box sidebar2">Sidebar2</div>
+        <div class="box content">Content
+            <br /> More content than we had before so this column is now quite tall.</div>
+        </div>
+        <div class="box footer">Footer</div>
+    </div>
+</body>
+
+</html>
